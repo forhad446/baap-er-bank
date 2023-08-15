@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap er bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-3xl font-semibold text-center mt-3">welcome to your <span class="font-bold text-[#774af1]">Baap
+                er bank</span>!!!</h1>
+    </header>
+    <main>
+        <section class="bg-blue-200 w-9/12 mx-auto mt-6 p-8">
+            <h1 class="text-2xl font-bold mb-3 inline">Please Login</h1>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn lg:float-right" onclick="my_modal_5.showModal()">show email & pwd</button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <form method="dialog" class="modal-box">
+                    <h3 class="font-bold text-lg text-center">Email & password!</h3>
+                    <p class="py-4">forhad@gmail.com</p>
+                    <p class="">forhad</p>
+                    <div class="modal-action">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </div>
+                </form>
+            </dialog>
+            <input class="w-full md:w-3/4 block mb-3 px-3 py-2 rounded-lg text-lg mt-3" type="email" name="" id="userEmail"
+                placeholder="Enter your email">
+            <input class="w-full md:w-3/4 block mb-3 px-3 py-2 rounded-lg text-lg" type="password" name=""
+                id="userPassword" placeholder="Enter your password">
+            <button id="btn-submit"
+                class="bg-amber-600 text-2xl font-semibold px-8 py-2 text-white rounded-lg hover:bg-sky-700">Submit</button>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
